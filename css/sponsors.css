@@ -1,0 +1,106 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== COLORES ===== */
+:root {
+  --fondo: #111111;
+  --carta: #222222;
+  --borde: #7a0a1c;
+  --rojo: #c8102e;
+  --texto: #ffffff;
+}
+
+body {
+  background-color: var(--fondo);
+  color: var(--texto);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+.header {
+  padding: 24px 20px;
+  text-align: center;
+  border-bottom: 2px solid var(--borde);
+}
+
+.logo {
+  font-size: 1.6rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.logo span {
+  color: var(--rojo);
+}
+
+/* ===== CONTENIDO ===== */
+.contenido {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.titulo {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.texto {
+  text-align: center;
+  color: #dddddd;
+  font-size: 0.95rem;
+  max-width: 650px;
+  margin: 0 auto 40px;
+}
+
+/* ===== LOGOS ===== */
+.logos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.logo-slot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  background-color: var(--carta);
+  border: 2px solid var(--borde);
+  color: #666666;
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  overflow: hidden;
+}
+
+/* Cuando pongas una <img> dentro del recuadro */
+.logo-slot img {
+  max-width: 80%;
+  max-height: 70%;
+  object-fit: contain;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center;
+  padding: 24px 20px;
+  font-size: 0.8rem;
+  color: #aaaaaa;
+  border-top: 3px solid var(--rojo);
+  background-color: #1a0006;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .logos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
