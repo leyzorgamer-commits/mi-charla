@@ -33,10 +33,12 @@ body {
   font-size: 1.6rem;
   letter-spacing: 4px;
   text-transform: uppercase;
+  border-radius: 35px;
 }
 
 .logo span {
   color: var(--rojo);
+  border-radius: 35px;
 }
 
 
@@ -132,14 +134,155 @@ body {
 }
 
 
-.footer {
-  text-align: center;
-  padding: 24px 20px;
-  font-size: 0.8rem;
-  color: #aaaaaa;
-  border-top: 3px solid var(--rojo);
-  background-color: #1a0006;
+/* CONFIGURACIÓN GENERAL */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #111111;
+    color: white;
+    font-family: Arial, sans-serif;
 }
+
+/* CONTENIDO PRINCIPAL */
+
+.contenido {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 30px 25px;
+    text-align: center;
+}
+
+/* CAJA DEL TEXTO */
+
+.contenido p {
+    max-width: 850px;
+    margin: 25px auto;
+    padding: 25px 30px;
+    background-color: #242424;
+    border-left: 4px solid #b00020;
+    border-radius: 5px;
+    color: #eeeeee;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: left;
+}
+
+/* TÍTULO DE NUTRICIÓN */
+
+.titulo-seccion {
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 45px 0 30px;
+    text-align: center;
+}
+
+/* IMAGEN DEL ARTÍCULO */
+
+.articulo {
+    max-width: 850px;
+    margin: 0 auto 50px;
+    padding: 20px;
+    background-color: #222222;
+    border: 1px solid #8b0015;
+    border-radius: 6px;
+}
+
+.articulo img {
+    display: block;
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    margin: auto;
+    border-radius: 4px;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #080808;
+    border-top: 2px solid #8b0015;
+    padding: 35px 8%;
+    margin-top: 70px;
+    color: white;
+}
+
+.footer p {
+    color: #cccccc;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* PARTE INFERIOR DEL FOOTER */
+
+.footer-abajo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.footer-abajo div a {
+    display: block;
+    color: #bbbbbb;
+    text-decoration: none;
+    font-size: 13px;
+    margin: 10px 0;
+    transition: 0.3s;
+}
+
+.footer-abajo div a:hover {
+    color: #e0002b;
+}
+
+/* IMÁGENES DE PAGO */
+
+.pagos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.pagos img {
+    width: 65px;
+    height: 45px;
+    object-fit: contain;
+    background-color: white;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+
+
+@media (max-width: 600px) {
+
+    .contenido {
+        padding: 20px 15px;
+    }
+
+    .contenido p {
+        padding: 18px;
+        font-size: 14px;
+    }
+
+    .titulo-seccion {
+        font-size: 24px;
+    }
+
+    .footer-abajo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
 
 
 @media (max-width: 700px) {
@@ -194,6 +337,7 @@ body {
   font-size: 1.6rem;
   letter-spacing: 4px;
   text-transform: uppercase;
+  border-radius: 35px;
 }
 
 .logo span {
@@ -247,6 +391,7 @@ body {
   max-width: 80%;
   max-height: 70%;
   object-fit: contain;
+  border-radius: 35px;
 }
 
 
@@ -307,6 +452,7 @@ body {
   font-size: 1.6rem;
   letter-spacing: 4px;
   text-transform: uppercase;
+  border-radius: 35px;
 }
 
 .logo span {
@@ -516,16 +662,6 @@ body {
 }
 
 
-.footer {
-  text-align: center;
-  padding: 24px 20px;
-  font-size: 0.8rem;
-  color: #aaaaaa;
-  border-top: 3px solid var(--rojo);
-  background-color: #1a0006;
-}
-
-
 @media (max-width: 800px) {
   .cartas {
     grid-template-columns: repeat(2, 1fr);
@@ -563,7 +699,7 @@ body {
 }
 
 header {
-    background-color: #3d0008;
+  background-color: #7a0a1c;
     text-align: center;
     padding: 50px 20px;
 }
@@ -651,9 +787,9 @@ footer {
 /*divide*/
 
 header {
-    background-color: #3d0008;
+   
     border-bottom: 2px solid #c8102e;
-    text-align: center;
+    text-align: left;
     padding: 20px;
 }
 
@@ -662,6 +798,7 @@ header {
     max-width: 100%;
     display: block;
     margin: 0 auto 20px auto;
+    border-radius: 35px ;
 }
 
 nav a {
@@ -678,6 +815,4 @@ nav a {
 nav a:hover {
     background-color: #c8102e;
 }
-.sitio-oficial {
-  color: white;
-}
+

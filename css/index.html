@@ -12,6 +12,7 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+    
     }
 
     body {
@@ -51,6 +52,7 @@
 
     .header img {
       height: 60px;
+      border-radius: 35px;
     }
 
     .menu a {
@@ -82,7 +84,7 @@
       margin: 0 auto 30px auto;
     }
 
-    /* ===== CARTAS ===== */
+    
     .contenido {
       max-width: 1200px;
       margin: 0 auto;
@@ -235,24 +237,31 @@
 
 <body>
 
- <header class="header">
-    
+ 
+<header class="header">
+
+    <!-- LOGO -->
+    <div class="logo">
+        <img src="./imagenes/teded.jpg" alt="Logo">
+    </div>
+
+    <!-- NAVEGACIÓN -->
     <nav class="menu">
-      <a href="index1.html">Inicio</a>
-      <a href="fisicoculturismo.html">Fisicoculturismo</a>
-      <a href="nutricion.html">Nutrición</a>
-      <a href="sponsors.html" class="activo">Sponsors</a>
+        <a href="index.html">INICIO</a>
+        <a href="fisicoculturismo.html">FISICOCULTURISMO</a>
+        <a href="nutricion.html">NUTRICIÓN</a>
+        <a href="sponsors.html">SPONSORS</a>
     </nav>
 
-    <a href="index.html">
-      <img src="./imagenes/logoMRolympia.png" alt="Olympia 2026">
-    </a>
+    <!-- SITIO OFICIAL -->
+    <div class="sitio-oficial">
+        <a href="https://mrolympia.com/" target="_blank">
+            Sitio Oficial
+        </a>
+    </div>
 
-    <nav class="menu">
-    
-      <a href="https://www.mrolympia.com" target="_blank">Sitio oficial</a>
-    </nav>
-  </header>
+</header>
+
 
   <section class="portada">
     <h1>El fisicoculturismo es un estilo de vida</h1>
@@ -265,7 +274,7 @@
 
   
   <main class="contenido" id="cartas">
-    <h2>Explorá el evento</h2>
+    <h2>Cartas Informativas</h2>
 
     <div class="cartas">
 
