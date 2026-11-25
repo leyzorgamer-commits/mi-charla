@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sponsors</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+  <!-- ENCABEZADO (igual que en el index) -->
+  <header class="header">
+
+    <div class="logo">
+      <img src="./imagenes/teded.jpg" alt="Logo">
+    </div>
+
+    <nav class="menu">
+      <a href="index.html">Inicio</a>
+      <a href="fisicoculturismo.html">Fisicoculturismo</a>
+      <a href="nutricion.html">Nutrición</a>
+      <a href="sponsors.html" class="activo">Sponsors</a>
+    </nav>
+
+    <div class="sitio-oficial">
+      <a href="https://mrolympia.com/" target="_blank">Sitio Oficial</a>
+    </div>
+
+  </header>
+
+
+  <main class="contenido">
+
+    <h2 class="titulo-seccion">Sponsors</h2>
+
+    <p class="subtitulo">
+      Las marcas que acompañan la competencia hacen posible el evento:
+      aportan suplementación, equipamiento, indumentaria y tecnología para
+      los atletas y para el público. Gracias a su apoyo, el escenario del
+      Olympia 2026 es una realidad.
+    </p>
+
+    <!-- Grilla de logos: para agregar una marca, copiá un logo-slot -->
+    <div class="logos">
+      <div class="logo-slot"><img src="./imagenes/Flex_Logo_40.jpg" alt="Flex"></div>
+      <div class="logo-slot"><img src="./imagenes/Gymreapers-Logo-Horizontal_White.avif" alt="Gymreapers"></div>
+      <div class="logo-slot"><img src="./imagenes/hers-logo.jpg" alt="Hers"></div>
+      <div class="logo-slot"><img src="./imagenes/integralm,wedical.jpg" alt="Integralmédica"></div>
+      <div class="logo-slot"><img src="./imagenes/MF_Logo_40.jpg" alt="Muscle & Fitness"></div>
+    </div>
+
+  </main>
+
+
+  <!-- FOOTER (igual en todas las páginas) -->
+  <footer class="footer">
+
+    <div class="footer-suscripcion">
+      <h4>No te pierdas nada</h4>
+      <p>
+        Suscribite y enterate primero de las novedades, los horarios
+        y las sorpresas del Olympia Weekend 2026.
+      </p>
+      <form class="form-suscripcion" onsubmit="event.preventDefault(); alert('¡Gracias por suscribirte!');">
+        <input type="email" placeholder="Ingresá tu email" required>
+        <button type="submit">Suscribirme</button>
+      </form>
+    </div>
+
+    <div class="footer-abajo">
+      <div class="footer-links">
+        <a href="index.html">Términos y condiciones</a>
+        <a href="index.html">Política y privacidad</a>
+        <a href="index.html">Configurar cookies</a>
+      </div>
+
+      <div class="pagos">
+        <img src="./imagenes/visa.png" alt="Visa">
+        <img src="./imagenes/dinero.png" alt="Tarjeta">
+        <img src="./imagenes/tarjeta-american-express.png" alt="American Express">
+      </div>
+    </div>
+
+    <p class="copyright">© 2026 Olympia · Todos los derechos reservados</p>
+
+  </footer>
+
+</body>
+</html>
