@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olympia Weekend 2026</title>
+<link rel="stylesheet" href="style.css">
+  <style>
+   
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #111111;
+      color: #ffffff;
+    }
+
+    a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    
+    .boton {
+      display: inline-block;
+      background-color: #c8102e;
+      color: #ffffff;
+      padding: 10px 24px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .boton:hover {
+      background-color: #ff1a40;
+    }
+
+    
+    .header {
+      background-color: #7a0a1c;
+      border-bottom: 4px solid #c8102e;
+      padding: 10px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header img {
+      height: 60px;
+      border-radius: 35px;
+    }
+
+    .menu a {
+      margin-left: 25px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .menu a:hover {
+      color: #ff1a40;
+    }
+
+   
+    .portada {
+      background-color: #3a0309;
+      padding: 100px 40px;
+      text-align: center;
+    }
+
+    .portada h1 {
+      font-size: 48px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .portada p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto 30px auto;
+    }
+
+    
+    .contenido {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    .contenido h2 {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+
+    .cartas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .cartas {
+  display: flex;
+  gap: 16px;
+  align-items: stretch;   
+}
+
+.carta1, .carta2, .carta3, .carta4 {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  position: relative;    
+  overflow: hidden;        
+  background-color: #222222;
+  border: 2px solid #7a0a1c;
+}
+
+.carta1 img, .carta2 img, .carta3 img, .carta4 img {
+  width: 100%;
+  height: 200px;           
+  object-fit: cover;       
+  display: block;
+  position: static;        
+}
+
+.carta-texto {
+  padding: 16px;
+  flex: 1;                 
+}
+
+    .carta:hover {
+      border-color: #c8102e;
+    }
+
+    .carta img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+   
+    .carta img.logo {
+      object-fit: contain;
+      background-color: #ffffff;
+    }
+
+    .carta-texto {
+      padding: 20px;
+    }
+
+    .carta-texto h3 {
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .carta-texto p {
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    
+    .footer {
+      background-color: #3a0309;
+      border-top: 4px solid #c8102e;
+      padding: 40px;
+    }
+
+    .footer-columnas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: space-between;
+    }
+
+    .footer h4 {
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .footer ul {
+      list-style: none;
+    }
+
+    .footer li {
+      margin-bottom: 8px;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    .footer input {
+      padding: 8px;
+      border: none;
+    }
+
+    .footer button {
+      padding: 8px 12px;
+      background-color: #000000;
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+    }
+
+    .footer button:hover {
+      background-color: #c8102e;
+    }
+
+    .footer-abajo {
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid #7a0a1c;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .footer-abajo a {
+      margin-right: 20px;
+    }
+
+    .pagos img {
+      height: 35px;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+ 
+<header class="header">
+
+    <!-- LOGO -->
+    <div class="logo">
+        <img src="./imagenes/teded.jpg" alt="Logo">
+    </div>
+
+    <!-- NAVEGACIÓN -->
+    <nav class="menu">
+        <a href="index.html">INICIO</a>
+        <a href="fisicoculturismo.html">FISICOCULTURISMO</a>
+        <a href="nutricion.html">NUTRICIÓN</a>
+        <a href="sponsors.html">SPONSORS</a>
+    </nav>
+
+    <!-- SITIO OFICIAL -->
+    <div class="sitio-oficial">
+        <a href="https://mrolympia.com/" target="_blank">
+            Sitio Oficial
+        </a>
+    </div>
+
+</header>
+
+
+  <section class="portada">
+    <h1>El fisicoculturismo es un estilo de vida</h1>
+    <p>
+      Competencia, entrenamiento, nutrición y cultura fitness en un solo lugar.
+      Descubrí todo lo que tenés que saber de la edición 2026.
+    </p>
+    <a href="#cartas" class="boton">Descubrir</a>
+  </section>
+
+  
+  <main class="contenido" id="cartas">
+    <h2>Cartas Informativas</h2>
+
+    <div class="cartas">
+
+   
+      <div class="carta1">
+        <img src="./imagenes/tarima.jpeg" alt="Escenario del Olympia">
+        <div class="carta-texto">
+          <h3>El Culturismo</h3>
+          <p>
+            El escenario donde los mejores atletas del mundo muestran años de disciplina.
+            Conocé las categorías y la historia del título más prestigioso.
+          </p>
+          <a href="fisicoculturismo.html" class="boton">Ver idea</a>
+        </div>
+      </div>
+
+    
+      <div class="carta2" id="nutricion">
+        <img src="./imagenes/carbos.jpg" alt="Granos y panes">
+        <div class="carta-texto">
+          <h3>Nutrición</h3>
+          <p>
+            Cereales, granos y panes integrales: la base de la energía para entrenar.
+            Ideas simples para comer mejor.
+          </p>
+          <a href="nutricion.html" class="boton">Ver más</a>
+        </div>
+      </div>
+
+     
+      <div class="carta3">
+        <img src="./imagenes/integralm,wedical.jpg" alt="Logo Olympia 2026" class="logo">
+        <div class="carta-texto">
+          <h3>Equipamiento y marcas</h3>
+          <p>
+            Las marcas que acompañan el evento: equipos de fuerza,
+            suplementación y tecnología para el alto rendimiento.
+          </p>
+          <a href="sponsors.html" class="boton">Ver más</a>
+        </div>
+      </div>
+
+      <!-- Carta 4 -->
+      <div class="carta4" id="entradas">
+        <img src="./imagenes/tarjeta-american-express.png" alt="Tarjeta" class="logo">
+        <div class="carta-texto">
+          <h3>Entradas y pagos</h3>
+          <p>
+            Asegurá tu lugar. Pagá con Visa, tarjeta de crédito
+            o American Express de forma rápida y segura.
+          </p>
+          <a href="entradaspagos.html" class="boton">Ver más</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  
+  <footer class="footer">
+
+    <div class="footer-columnas">
+
+      <div>
+        <h4>Ayuda</h4>
+        <ul>
+          <li><a href="">Contactanos</a></li>
+          <li><a href="">Métodos de pago</a></li>
+          <li><a href="">Preguntas frecuentes</a></li>
+          <li><a href="">Seguí tu envío</a></li>
+          <li><a href="">Términos y condiciones de uso</a></li>
+          <li><a href="">Defensa de las y los consumidores</a></li>
+          <li><a href="">Descuentos para estudiantes</a></li>
+          <li><a href="">Recomendá a un amigo</a></li>
+        </ul>
+        <p><br><a href="">Botón de arrepentimiento</a></p>
+      </div>
+
+      <div>
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="">Tiendas</a></li>
+          <li><a href="">Cambios y devoluciones</a></li>
+          <li><a href="">Cuidado de los productos</a></li>
+          <li><a href="">Guía de talles</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Acerca del evento</h4>
+        <ul>
+          <li><a href="">Compañía</a></li>
+          <li><a href="">Noticias corporativas</a></li>
+          <li><a href="">Empleo</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Mantenete al día</h4>
+        <p>Inscribite y obtené 15% OFF en tu primera compra</p>
+        <br>
+        <input type="email" placeholder="Ingrese su email">
+        <button>SUSCRIBIRME</button>
+      </div>
+
+    </div>
+
+    <div class="footer-abajo">
+      <div>
+        <a href="index.html">Términos y condiciones</a>
+        <a href="index.html">Política y privacidad</a>
+        <a href="index.html">Configurar cookies</a>
+      </div>
+
+      <div class="pagos">
+        <img src="./imagenes/visa.png" alt="Visa">
+        <img src="./imagenes/dinero.png" alt="Tarjeta">
+        <img src="./imagenes/tarjeta-american-express.png" alt="American Express">
+      </div>
+    </div>
+
+  </footer>
+
+</body>
+</html>
