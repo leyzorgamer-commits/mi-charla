@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi charla</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+  <!-- ENCABEZADO (igual que en el index) -->
+  <header class="header">
+
+    <div class="logo">
+      <img src="./imagenes/teded.jpg" alt="Logo">
+    </div>
+
+    <nav class="menu">
+      <a href="index.html">Inicio</a>
+      <a href="fisicoculturismo.html">Fisicoculturismo</a>
+      <a href="nutricion.html">Nutrición</a>
+      <a href="sponsors.html">Sponsors</a>
+    </nav>
+
+    <div class="sitio-oficial">
+      <a href="https://mrolympia.com/" target="_blank">Sitio Oficial</a>
+    </div>
+
+  </header>
+
+
+  <main class="contenido">
+
+    <h2 class="titulo-seccion">Mi charla</h2>
+    <p class="subtitulo">Por qué el fisicoculturismo es lo que es.</p>
+
+    <!-- Cada bloque es una parte del guion: un espacio para la imagen y un cuadro de texto.
+         Para poner una foto, reemplazá el <span> por: -->
+
+    <!-- Parte 1 -->
+    <section class="articulo">
+      <div class="espacio-imagen">
+        <span> <img src="./imagenes/Leofitpintando.png" alt="Leofitpintando"></span>
+      </div>
+      <div class="articulo-texto">
+        <h3>1. Introducción</h3>
+        <p>Soy Leandro Ahumada, más conocido como leoofitt, y hace poco debuté en la Río Negro IFBB Cup. Salí primero en
+          Novice y segundo en el Overall, en Men's Physique. Para mí el fisicoculturismo no es solo subirse a un
+          escenario. Es lo que me gusta hacer todos los días y lo que me tiene la cabeza ocupada casi todo el tiempo.
+        </p>
+      </div>
+    </section>
+
+    <!-- Parte 2 (con la clase "invertido" la imagen queda a la derecha) -->
+    <section class="articulo invertido">
+      <div class="espacio-imagen">
+        <span><img src="./imagenes/leofitentarima.png" alt="leofitentarima"></span>
+      </div>
+      <div class="articulo-texto">
+        <h3>2. Disciplina y constancia</h3>
+        <p>Lo que se ve arriba del escenario son unos minutos, pero atrás hay meses de laburo que nadie ve. Entrenar
+          cuando tenés ganas y también cuando no, comer lo que toca aunque tengas ganas de otra cosa, y repetirlo semana
+          tras semana. No se trata de motivación, porque la motivación va y viene. Lo que te hace avanzar es la
+          disciplina, y para mí eso fue lo más difícil de aprender.</p>
+      </div>
+    </section>
+
+    <!-- Parte 3 -->
+    <section class="articulo">
+      <div class="espacio-imagen">
+        <span><img src="./imagenes/carboscarguitaahorasi.jpg" alt="descripción de la foto"></span>
+      </div>
+      <div class="articulo-texto">
+        <h3>3. Alimentación y descanso</h3>
+        <p>En este deporte tenés que cuidar todo lo que le das al cuerpo. Lo que comés, cuándo lo comés y cuánto dormís
+          cambia tu físico tanto como el entrenamiento. Dormir bien y descansar es parte del proceso. Muchos creen que
+          crecés en el gimnasio, pero en realidad crecés cuando descansás. Aprendí a organizar mis comidas y mis
+          horarios como parte de mi rutina.</p>
+      </div>
+    </section>
+
+    <!-- Parte 4 -->
+    <section class="articulo invertido">
+      <div class="espacio-imagen">
+        <span><img src="./imagenes/leofitmedalla.png" alt="descripción de la foto"></span>
+      </div>
+      <div class="articulo-texto">
+        <h3>4. Estilo de vida</h3>
+        <p>El fisicoculturismo es un deporte de tiempo completo. Mientras entrenás, mientras comés, mientras dormís y
+          hasta cuando estás haciendo otra cosa, estás pensando en tu objetivo. Por eso para mí es un estilo de vida y
+          no solo un deporte. Me enseñó a ser constante y a ser paciente, y todavía estoy aprendiendo. Esto recién
+          empieza.</p>
+      </div>
+    </section>
+
+
+    <!-- Cuadritos con las ideas principales (usan la misma clase "carta" del index) -->
+    <h2 class="titulo-seccion mas-espacio">Puntos clave</h2>
+
+    <div class="cartas cartas-tres">
+
+      <div class="carta">
+        <div class="carta-texto">
+          <h3>Punto 1</h3>
+          <p>Una idea corta que quieras que el público recuerde.</p>
+        </div>
+      </div>
+
+      <div class="carta">
+        <div class="carta-texto">
+          <h3>Punto 2</h3>
+          <p>Otra idea importante de tu charla.</p>
+        </div>
+      </div>
+
+      <div class="carta">
+        <div class="carta-texto">
+          <h3>Punto 3</h3>
+          <p>La última idea o una frase para cerrar.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <!-- FOOTER (igual en todas las páginas) -->
+  <footer class="footer">
+
+    <div class="footer-suscripcion">
+      <h4>No te pierdas nada</h4>
+      <p>
+        Suscribite y enterate primero de las novedades, los horarios
+        y las sorpresas del Olympia Weekend 2026.
+      </p>
+      <form class="form-suscripcion" onsubmit="event.preventDefault(); alert('¡Gracias por suscribirte!');">
+        <input type="email" placeholder="Ingresá tu email" required>
+        <button type="submit">Suscribirme</button>
+      </form>
+    </div>
+
+    <div class="footer-abajo">
+      <div class="footer-links">
+        <a href="index.html">Términos y condiciones</a>
+        <a href="index.html">Política y privacidad</a>
+        <a href="index.html">Configurar cookies</a>
+      </div>
+
+      <div class="pagos">
+        <img src="./imagenes/visa.png" alt="Visa">
+        <img src="./imagenes/dinero.png" alt="Tarjeta">
+        <img src="./imagenes/tarjeta-american-express.png" alt="American Express">
+      </div>
+    </div>
+
+    <p class="copyright">© 2026 Olympia · Todos los derechos reservados</p>
+
+  </footer>
+
+</body>
+
+</html>
