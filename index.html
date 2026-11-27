@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olympia Weekend 2026</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+  <!-- ENCABEZADO: logo, menú y link al sitio oficial -->
+  <header class="header">
+
+    <div class="logo">
+      <img src="./imagenes/teded.jpg" alt="Logo">
+    </div>
+
+    <nav class="menu">
+      <a href="index.html" class="activo">Inicio</a>
+      <a href="fisicoculturismo.html">Fisicoculturismo</a>
+      <a href="nutricion.html">Nutrición</a>
+      <a href="sponsors.html">Sponsors</a>
+    </nav>
+
+    <div class="sitio-oficial">
+      <a href="https://mrolympia.com/" target="_blank">Sitio Oficial</a>
+    </div>
+
+  </header>
+
+
+  <!-- PORTADA: el botón baja hasta las cartas (id="cartas") -->
+  <section class="portada"c>
+    <section class="hero">
+    <h1>El fisicoculturismo es un estilo de vida</h1>
+    <p>
+      Competencia, entrenamiento, nutrición y cultura fitness en un solo lugar.
+      Descubrí todo lo que tenés que saber de la edición 2026.
+    </p>
+    <a href="#cartas" class="boton">Descubrir</a>
+  </section>
+</section>
+
+  <!-- CARTAS INFORMATIVAS: las 4 usan la misma clase "carta" -->
+  <main class="contenido" id="cartas">
+    <h2 class="titulo-seccion">Cartas informativas</h2>
+
+    <div class="cartas">
+
+      <!-- Carta 1 -->
+      <div class="carta">
+        <img src="./imagenes/tarima.jpeg" alt="Escenario del Olympia">
+        <div class="carta-texto">
+          <h3>El culturismo</h3>
+          <p>
+            El escenario donde los mejores atletas del mundo muestran años de disciplina.
+            Conocé las categorías y la historia del título más prestigioso.
+          </p>
+          <a href="fisicoculturismo.html" class="boton">Ver idea</a>
+        </div>
+      </div>
+
+      <!-- Carta 2 -->
+      <div class="carta">
+        <img src="./imagenes/carbos.jpg" alt="Granos y panes">
+        <div class="carta-texto">
+          <h3>Nutrición</h3>
+          <p>
+            Cereales, granos y panes integrales: la base de la energía para entrenar.
+            Ideas simples para comer mejor.
+          </p>
+          <a href="nutricion.html" class="boton">Ver más</a>
+        </div>
+      </div>
+
+      <!-- Carta 3  -->
+      <div class="carta">
+        <img src="./imagenes/integralm,wedical.jpg" alt="Logo de Integralmédica" class="img-logo">
+        <div class="carta-texto">
+          <h3>Equipamiento y marcas</h3>
+          <p>
+            Las marcas que acompañan el evento: equipos de fuerza,
+            suplementación y tecnología para el alto rendimiento.
+          </p>
+          <a href="sponsors.html" class="boton">Ver más</a>
+        </div>
+      </div>
+
+      <!-- Carta 4  -->
+      <div class="carta">
+        <img src="./imagenes/leofit antebrazo.jpe" alt="Mi charla">
+        <div class="carta-texto">
+          <h3>Mi charla</h3>
+          <p>
+            Por qué el fisicoculturismo es un deporte increible: mi guion sobre
+            la disciplina, la constancia y el estilo de vida.
+          </p>
+          <a href="micharla.html" class="boton">Ver más</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+
+  <!-- FOOTER: suscripción, términos y medios de pago -->
+  <footer class="footer">
+
+    <div class="footer-suscripcion">
+      <h4>No te pierdas nada</h4>
+      <p>
+        Suscribite y enterate primero de las novedades, los horarios
+        y las sorpresas del Olympia Weekend 2026.
+      </p>
+      <!-- Por ahora el formulario es visual: solo muestra un aviso, no guarda el email -->
+      <form class="suscripcion" onsubmit="event.preventDefault(); alert('¡Gracias por suscribirte!');">
+        <input type="email" placeholder="Ingresá tu email" required>
+        <button type="submit">Suscribirme</button>
+      </form>
+    </div>
+
+    <div class="footer-abajo">
+      <div class="footer-links">
+        <a href="index.html">Términos y condiciones</a>
+        <a href="index.html">Política y privacidad</a>
+        <a href="index.html">Configurar cookies</a>
+      </div>
+
+      <div class="pagos">
+        <img src="./imagenes/visa.png" alt="Visa">
+        <img src="./imagenes/dinero.png" alt="Tarjeta">
+        <img src="./imagenes/tarjeta-american-express.png" alt="American Express">
+      </div>
+    </div>
+
+    <p class="copyright"> 2026 Olympia · Todos los derechos reservados</p>
+
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,418 @@
+/* estilo.css
+   Hoja de estilos de todo el sitio (Olympia Weekend 2026).
+   La usan index, fisicoculturismo, nutricion, sponsors y micharla. */
+
+
+/* ---------- COLORES Y BASE ---------- */
+
+/* Guardo los colores en variables para cambiarlos en un solo lugar */
+:root {
+  --fondo: #111111;
+  --carta: #222222;
+  --vino: #7a0a1c;          /* header y bordes */
+  --vino-oscuro: #3a0309;   /* portada y footer */
+  --rojo: #c8102e;
+  --rojo-fuerte: #ff1a40;
+  --texto: #ffffff;
+  --texto-suave: #dddddd;
+}
+
+/* Saco los márgenes que trae el navegador por defecto */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--fondo);
+  color: var(--texto);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--texto);
+  text-decoration: none;
+}
+
+
+/* ---------- HEADER (el mismo en todas las páginas) ---------- */
+
+.header {
+  background-color: var(--vino);
+  border-bottom: 4px solid var(--rojo);
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.header img {
+  height: 60px;
+  border-radius: 35px;
+  display: block;
+}
+
+.menu a {
+  margin-left: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* "activo" marca en qué página estamos */
+.menu a:hover,
+.menu a.activo {
+  color: var(--rojo-hover);
+}
+
+
+/* ---------- PORTADA (solo index) ---------- */
+
+.portada {
+  background-image:
+    linear-gradient(rgba(141, 39, 56, 0.75), rgba(0, 0, 0, 0.7)),
+    url('./imagenes/fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 40px;
+  text-align: center;
+}
+
+.portada h1 {
+  font-size: 48px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.portada p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+}
+
+
+/* ---------- CONTENIDO GENERAL ---------- */
+
+.contenido {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.titulo-seccion {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+/* Para separar un segundo título del bloque de arriba */
+.mas-espacio {
+  margin-top: 60px;
+}
+
+/* Subo un poco el subtítulo para que quede pegado al título */
+.subtitulo {
+  text-align: center;
+  color: #bbbbbb;
+  max-width: 650px;
+  margin: -14px auto 36px;
+}
+
+
+/* ---------- BOTÓN ---------- */
+
+.boton {
+  display: inline-block;
+  background-color: var(--rojo);
+  color: var(--texto);
+  padding: 10px 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.2s;
+}
+
+.boton:hover {
+  background-color: var(--rojo-hover);
+}
+
+
+/* ---------- CARTAS ----------
+   Una sola clase (.carta) para las 4 cartas del index
+   y para los cuadritos de "Mi charla" */
+
+.cartas {
+  display: flex;
+  gap: 20px;
+}
+
+.cartas .carta {
+  width: 22%;
+}
+
+/* Variante con 3 columnas */
+.cartas-tres .carta {
+  width: 30%;
+}
+
+.carta {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--carta);
+  border: 2px solid var(--vino);
+  overflow: hidden;
+}
+
+.carta:hover {
+  border-color: var(--rojo);
+}
+
+.carta img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Para los logos: se ven enteros y sobre fondo blanco */
+.carta img.img-logo {
+  background-color: #ffffff;
+}
+
+.carta-texto {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.carta-texto h3 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* flex: 1 empuja el botón hacia abajo y quedan todos alineados */
+.carta-texto p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+  flex: 1;
+}
+
+.carta-texto .boton {
+  align-self: flex-start;
+}
+
+
+/* ---------- ARTÍCULO (imagen al costado + texto) ----------
+   Se usa en fisicoculturismo y en Mi charla */
+
+.articulo {
+  display: flex;
+  background-color: var(--carta);
+  border: 2px solid var(--vino);
+  overflow: hidden;
+
+}
+
+.articulo .articulo {
+  margin-top: 30px;
+}
+
+/* Con row reverse la imagen pasa ala derecha */
+.articulo.invertido {
+  flex-direction: row-reverse;
+}
+
+.espacio-imagen {
+  flex: 1 1 45%;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a1a1a;
+  border-right: 2px solid var(--vino);
+  overflow: hidden;
+}
+ 
+.articulo.invertido .espacio-imagen {
+  border-right: none;
+  border-left: 2px solid var(--vino);
+}
+
+.espacio-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.articulo-texto {
+ width: 55%;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.articulo-texto h3 {
+  width: 45%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
+.articulo-texto p {
+  font-size: 0.95rem;
+  color: var(--texto-suave);
+  margin-bottom: 24px;
+}
+
+.articulo-texto .boton {
+  align-self: flex-start;
+}
+
+
+/* ---------- NUTRICIÓN ---------- */
+
+/* Cajas de texto */
+.caja-texto {
+  max-width: 850px;
+  margin: 0 auto 25px;
+  padding: 25px 30px;
+  background-color: black;
+  border-left: 4px solid var(--rojo);
+  border-radius: 5px;
+  color: white;
+  line-height: 1.8;
+}
+
+.imagen-centrada {
+  max-width: 850px;
+  margin: 0 auto 30px;
+  padding: 20px;
+  background-color: var(--carta);
+  border: 1px solid var(--vino);
+  border-radius: 6px;
+}
+
+.imagen-centrada img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+
+/* ---------- SPONSORS ---------- */
+
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.logo-slot {
+  width: 30%;
+}
+
+.logo-slot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  background-color: var(--carta);
+  border: 2px solid var(--vino);
+  overflow: hidden;
+}
+
+.logo-slot img {
+  max-width: 80%;
+  max-height: 70%;
+  object-fit: contain;
+  border-radius: 35px;
+}
+
+
+/* ---------- FOOTER (el mismo en todas las páginas) ---------- */
+
+.footer {
+  background-color: var(--vino-oscuro);
+  border-top: 4px solid var(--rojo);
+  padding: 40px 40px 20px;
+  margin-top: 60px;
+}
+
+/* Parte de arriba: invitación a suscribirse */
+.footer-suscripcion {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.footer-suscripcion h4 {
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.footer-suscripcion p {
+  color: var(--texto-suave);
+  margin-bottom: 18px;
+}
+
+.suscripcion {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+
+/* Parte de abajo: términos a la izquierda, tarjetas a la derecha */
+.footer-abajo {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 20px;
+  border-top: 1px solid var(--vino);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-links a {
+  margin-right: 20px;
+  font-size: 14px;
+  color: #bbbbbb;
+}
+
+.footer-links a:hover {
+  color: var(--rojo-hover);
+}
+
+.pagos {
+  display: flex;
+  gap: 12px;
+}
+
+.pagos img {
+  width: 65px;
+  height: 45px;
+  object-fit: contain;
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.copyright {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaaaaa;
+}
